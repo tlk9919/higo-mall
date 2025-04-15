@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="嗨购商城-实验课2" />
+    <list default="true" id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="嗨购商城-实验课2-jsp初步界面">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,17 +46,23 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "JUnit.ManagerMapperTest.testInsertManager.executor": "Run",
+    "JUnit.ManagerServiceTest.loginTest.executor": "Run",
+    "JUnit.ManagerServiceTest.saveTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.MallApplication.executor": "Run",
+    "Spring Boot.MallApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/Code/higo-mall/src/main/java/com/tanglinkai/mall",
-    "last_opened_file_path": "D:/Code/GitHub/higo-mall",
+    "last_opened_file_path": "D:/Code/javase-advance/javase-advance-review",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,8 +81,14 @@
       <recent name="com.tanglinkai.mall" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\higo-mall" />
+      <recent name="D:\Code\higo-mall\src\main" />
+      <recent name="D:\Code\higo-mall\src\webapp" />
       <recent name="D:\Code\higo-mall\src" />
+      <recent name="D:\Code\higo-mall\src\main\WEB-INF\views" />
+      <recent name="D:\Code\higo-mall" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tanglinkai.mall" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,7 +101,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerMapperTest.testInsertManager">
+  <component name="RunManager" selected="Spring Boot.MallApplication">
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -113,34 +128,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HigoMallApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <configuration name="ManagerServiceTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="higo-mall" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.mall.HigoMallApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanglinkai.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanglinkai.mall" />
+      <option name="MAIN_CLASS_NAME" value="com.tanglinkai.mall.ManagerServiceTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HigoMallApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <configuration name="ManagerServiceTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="higo-mall" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.mall.higomall.HigoMallApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Mall2Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="higo-mall" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tanglinkai.mall.Mall2Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Mall2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="higo-mall" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.laotan.mall2.Mall2Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanglinkai.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanglinkai.mall" />
+      <option name="MAIN_CLASS_NAME" value="com.tanglinkai.mall.ManagerServiceTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,6 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManagerServiceTest.loginTest" />
+        <item itemvalue="JUnit.ManagerServiceTest.saveTest" />
         <item itemvalue="JUnit.ManagerMapperTest.testInsertManager" />
       </list>
     </recent_temporary>
@@ -177,7 +194,9 @@
       <updated>1743500807678</updated>
       <workItem from="1743500808740" duration="1138000" />
       <workItem from="1743517172024" duration="560000" />
-      <workItem from="1744119880856" duration="1677000" />
+      <workItem from="1744119880856" duration="2766000" />
+      <workItem from="1744698249941" duration="9803000" />
+      <workItem from="1744708432951" duration="3306000" />
     </task>
     <task id="LOCAL-00001" summary="嗨购商城初始化结构">
       <option name="closed" value="true" />
@@ -195,7 +214,31 @@
       <option name="project" value="LOCAL" />
       <updated>1744121535070</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="嗨购商城-实验课2">
+      <option name="closed" value="true" />
+      <created>1744121876348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744121876348</updated>
+    </task>
+    <task id="LOCAL-00004" summary="嗨购商城-实验课2-自定义异常">
+      <option name="closed" value="true" />
+      <created>1744702418514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744702418514</updated>
+    </task>
+    <task id="LOCAL-00005" summary="嗨购商城-实验课2-jsp初步界面">
+      <option name="closed" value="true" />
+      <created>1744710578568</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744710578568</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +247,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="嗨购商城初始化结构" />
     <MESSAGE value="嗨购商城-实验课2" />
-    <option name="LAST_COMMIT_MESSAGE" value="嗨购商城-实验课2" />
+    <MESSAGE value="嗨购商城-实验课2-自定义异常" />
+    <MESSAGE value="嗨购商城-实验课2-jsp初步界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="嗨购商城-实验课2-jsp初步界面" />
   </component>
 </project>

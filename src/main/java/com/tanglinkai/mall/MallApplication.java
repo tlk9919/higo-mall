@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan(basePackages = "com.tanglinkai.mall.mapper")
-@SpringBootApplication  //自动扫描当前类所在的包及其子包
+@SpringBootApplication
 public class MallApplication {
 
 	public static void main(String[] args) {

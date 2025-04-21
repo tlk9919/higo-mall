@@ -3,7 +3,8 @@ package com.tanglinkai.mall.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tanglinkai.mall.contstants.Constants;
-import com.tanglinkai.mall.entity.Manager;
+import com.tanglinkai.mall.entity.enums.AccountStatusEnums;
+import com.tanglinkai.mall.entity.po.Manager;
 import com.tanglinkai.mall.excpetion.AccountExistException;
 import com.tanglinkai.mall.mapper.ManagerMapper;
 import com.tanglinkai.mall.service.ManagerService;
@@ -19,6 +20,7 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
 
     /**
      * 账号注册
+     *
      * @param manager
      */
     @Override
@@ -28,16 +30,20 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
         LambdaQueryWrapper<Manager> account = new LambdaQueryWrapper<Manager>()
                 .eq(Manager::getAccount, manager.getAccount());
 
+
         Long count = managerMapper.selectCount(account);
+        //2.创建用户
+
         // 2.保存
-        if (count>0) {
-            throw new AccountExistException(Constants.Account_EXIST+manager.getAccount());
+        if (count > Constants.ZREO) {
+            throw new AccountExistException(Constants.Account_EXIST + manager.getAccount());
         }
         managerMapper.insert(manager);
     }
 
     /**
      * 账号登录
+     *
      * @param account
      * @param password
      * @return
@@ -48,8 +54,14 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
         LambdaQueryWrapper<Manager> lambdaQueryWrapper = new LambdaQueryWrapper<Manager>()
                 .eq(Manager::getAccount, account)
                 .eq(Manager::getPassword, password);
-        //2.查询并返回
-        return managerMapper.selectOne(lambdaQueryWrapper);
+        //1.1如果账号状态为0，则账号被禁用
+        Manager manager = managerMapper.selectOne(lambdaQueryWrapper);
+
+        if (manager != null && AccountStatusEnums.DISABLED.getCode().equals(manager.getStatus())) {
+            throw new AccountExistException(Constants.ACCOUNT_STATUS_ERROR);
+        }
+        //2.返回
+        return manager;
     }
 
 }

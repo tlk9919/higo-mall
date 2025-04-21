@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>登录</title>
 </head>
+
 <body>
+${msg}
 <form action="">
     账号：<input type="text" name="account"> <br>
     密码：<input type="password" name="password"> <br>

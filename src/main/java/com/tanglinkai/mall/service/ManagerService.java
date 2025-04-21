@@ -1,7 +1,8 @@
 package com.tanglinkai.mall.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.tanglinkai.mall.entity.Manager;
+import com.tanglinkai.mall.entity.po.Manager;
+
 public interface ManagerService extends IService<Manager> {
     /**
      * 新增管理员

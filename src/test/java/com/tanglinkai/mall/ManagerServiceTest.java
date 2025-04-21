@@ -1,7 +1,7 @@
 package com.tanglinkai.mall;
 
 import com.tanglinkai.mall.contstants.Constants;
-import com.tanglinkai.mall.entity.Manager;
+import com.tanglinkai.mall.entity.po.Manager;
 import com.tanglinkai.mall.service.ManagerService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class ManagerServiceTest {
 		Manager manager = new Manager();
 		manager.setAccount("admin");
 		manager.setPassword("123456");
-		manager.setStatus("y");
+		manager.setStatus("1");
 		managerService.addAccount(manager);
 	}
 

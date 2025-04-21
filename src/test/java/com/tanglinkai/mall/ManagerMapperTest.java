@@ -1,6 +1,6 @@
 package com.tanglinkai.mall;
 
-import com.tanglinkai.mall.entity.Manager;
+import com.tanglinkai.mall.entity.po.Manager;
 import com.tanglinkai.mall.mapper.ManagerMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

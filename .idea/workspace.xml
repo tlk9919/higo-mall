@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="嗨购商城-实验课3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/baseControler/ABaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/baseControler/AGlobalExceptionHandlerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/enums/VerifyRegexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/vo/ResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/excpetion/BusinessException.java" afterDir="false" />
+    <list default="true" id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="嗨购商城-实验课3-补充统一返回值结果">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/enums/GoodsStatusEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/po/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/po/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/mapper/GoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/goods_add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tanglinkai/mall/GoodsMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/contstants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/contstants/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tanglinkai/mall/controller/admin/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tanglinkai/mall/controller/admin/ManagerController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -49,51 +59,55 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2v7ezioSw1EkmIXlhTbkAWALSOT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.ManagerMapperTest.testInsertManager.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManagerServiceTest.loginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManagerServiceTest.saveTest.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MallApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Code/higo-mall/src/main/java/com/tanglinkai/mall&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Code/higo-mall/src/main/resources/static&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.GoodsMapperTest.testList.executor": "Debug",
+    "JUnit.ManagerMapperTest.testInsertManager.executor": "Run",
+    "JUnit.ManagerServiceTest.loginTest.executor": "Run",
+    "JUnit.ManagerServiceTest.saveTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MallApplication.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/Code/higo-mall/src/main/java/com/tanglinkai/mall",
+    "last_opened_file_path": "D:/Code/higo-mall/src/main/webapp/WEB-INF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tanglinkai.mall" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\higo-mall\src\main\resources\static" />
       <recent name="D:\Code\higo-mall\src\main\webapp\WEB-INF" />
+      <recent name="D:\Code\higo-mall\src\main\resources\static" />
       <recent name="D:\Code\higo-mall\src\main" />
       <recent name="D:\Code\higo-mall\src\webapp" />
       <recent name="D:\Code\higo-mall\src" />
@@ -116,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallApplication">
+  <component name="RunManager" selected="JUnit.GoodsMapperTest.testList">
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -126,6 +140,22 @@
       <option name="charset" value="UTF-8" />
       <option name="showConsole" value="true" />
       <method v="2" />
+    </configuration>
+    <configuration name="GoodsMapperTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="higo-mall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanglinkai.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanglinkai.mall" />
+      <option name="MAIN_CLASS_NAME" value="com.tanglinkai.mall.GoodsMapperTest" />
+      <option name="METHOD_NAME" value="testList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ManagerMapperTest.testInsertManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="higo-mall" />
@@ -185,6 +215,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GoodsMapperTest.testList" />
         <item itemvalue="JUnit.ManagerServiceTest.loginTest" />
         <item itemvalue="JUnit.ManagerServiceTest.saveTest" />
         <item itemvalue="JUnit.ManagerMapperTest.testInsertManager" />
@@ -200,6 +231,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="" />
@@ -216,7 +250,8 @@
       <workItem from="1745216569225" duration="1764000" />
       <workItem from="1745218350991" duration="15162000" />
       <workItem from="1745240687474" duration="2472000" />
-      <workItem from="1745244695804" duration="3035000" />
+      <workItem from="1745244695804" duration="3352000" />
+      <workItem from="1745302881057" duration="13811000" />
     </task>
     <task id="LOCAL-00001" summary="嗨购商城初始化结构">
       <option name="closed" value="true" />
@@ -266,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745234500838</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="嗨购商城-实验课3-补充统一返回值结果">
+      <option name="closed" value="true" />
+      <created>1745247933718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745247933718</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +321,7 @@
     <MESSAGE value="嗨购商城-实验课2-自定义异常" />
     <MESSAGE value="嗨购商城-实验课2-jsp初步界面" />
     <MESSAGE value="嗨购商城-实验课3" />
-    <option name="LAST_COMMIT_MESSAGE" value="嗨购商城-实验课3" />
+    <MESSAGE value="嗨购商城-实验课3-补充统一返回值结果" />
+    <option name="LAST_COMMIT_MESSAGE" value="嗨购商城-实验课3-补充统一返回值结果" />
   </component>
 </project>

@@ -7,6 +7,14 @@
     <title>后台管理</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/admin.css" />
+<script>
+    function del(id){
+        console.log("id:",id)
+        if(confirm("确认删除该数据吗？")){
+            location.href="/admin/manager/del/"+id
+        }
+    }
+</script>
 </head>
 <body>
 <div class="container">
@@ -54,7 +62,7 @@
                         <td>${manager.password}</td>
                         <td><a href="/admin/manager/update/${manager.id}"><img class="operator"
                                                                                src="/images/admin/icon_edit.gif" alt="修改" title="修改" /></a> <a
-                                href="javascript:void(0)" class="del" data-id=""><img class="operator"
+                                href="javascript:void(0)" class="del" onclick="del('${manager.id}')", data-id=""><img class="operator"
                                                                                       src="/images/admin/icon_del.gif" alt="删除" title="删除" /></a></td>
                     </tr>
                 </c:forEach>

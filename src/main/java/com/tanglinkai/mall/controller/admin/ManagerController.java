@@ -82,4 +82,15 @@ public class ManagerController extends ABaseController {
         return getSuccessResponseVO("redirect:/admin/manager/list");
     }
 
+    /**
+     *
+     * 根据id删除管理员
+     * @param id
+     * @return
+     */
+    @GetMapping("del/{id}")
+    public ModelAndView del(@PathVariable int id){
+        managerService.removeById(id);
+        return getSuccessResponseVO("redirect:/admin/manager/list");
+    }
 }

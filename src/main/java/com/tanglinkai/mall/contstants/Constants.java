@@ -20,4 +20,7 @@ public class Constants {
     public static final String MANAGERS_KEY = "managers";
     //账号不存在
     public static final String ACCOUNT_NOT_EXIST = "账号不存在";
+    //categories_key
+    public static final String CATEGORIES_KEY = "categories";
+    //热售商品（否）
 }

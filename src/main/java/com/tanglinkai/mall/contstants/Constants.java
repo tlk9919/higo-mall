@@ -18,9 +18,18 @@ public class Constants {
     public static final String ACCOUNT_STATUS_ERROR = "账号状态异常";
     //managers_key
     public static final String MANAGERS_KEY = "managers";
+    //goodses_key
+    public static final String GOODSES_KEY = "goodses";
+    //pageBean_key
+    public static final String PAGEBEAN_KEY = "pageBean";
     //账号不存在
     public static final String ACCOUNT_NOT_EXIST = "账号不存在";
     //categories_key
     public static final String CATEGORIES_KEY = "categories";
-    //热售商品（否）
+    //"D:\\Code\\higo-mall\\higo-mall-images"
+    public static final String IMAGE_PATH = "D:\\Code\\higo-mall\\higo-mall-images";
+    //"文件上传失败"
+    public static final String UPLOAD_FAIL = "文件上传失败";
+    //PAGE_SIZE_2
+    public static final Integer PAGE_SIZE_2 = 2;
 }

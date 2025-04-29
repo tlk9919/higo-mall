@@ -22,4 +22,6 @@ public class Goods {
     private String newest;
     private LocalDateTime saleTime;
     private String status;
+    private String cname;
+    private Category category;
 }

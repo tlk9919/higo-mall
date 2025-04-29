@@ -4,27 +4,228 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="嗨购商城-实验课3-补充统一返回值结果">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/enums/GoodsStatusEnums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/po/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/po/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/goods_add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tanglinkai/mall/GoodsMapperTest.java" afterDir="false" />
+    <list default="true" id="278e59d5-cb31-4d76-8232-99a4b1918c39" name="Changes" comment="嗨购商城-实验课4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/vo/PageBeanVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/goods_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/controller/admin/GoodsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/contstants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/contstants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/po/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/entity/po/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tanglinkai/mall/service/impl/GoodsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/admin2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/answer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ask.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/brand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/buying.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/buying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/bx_loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/card.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/category.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/circle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/comm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/comment.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/comments.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/consult.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/discuss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/dlsel_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/dlsort_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/dot_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/error.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/error_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/face.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/grab_expir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/grade_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/group_expir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/groupon_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/help_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/help_cont_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/help_title.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/inputbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/item_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/linebg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/new_product.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/nopic_100_100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/nopic_435_435.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/right_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/serv_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/service.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/shadow_b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/shadow_r.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/share.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/sprites.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/sprites_2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/sublist_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/submit_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/tel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/tips.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/tips_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/title_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/black_dot_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/btn_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/caption_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/dot_bg2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/favorites.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/h2_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/licurrent_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/list_table_thbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/orange_dot_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/sbtn_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/search_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/sel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/shopping.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/tr_show_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/tr_show_tdbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/uc_title_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/uc_titlebg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/uc_titleh2bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/ucenter/ucenter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/user_ico.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/welcome.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/wrap_box_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/images/xx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/1_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/1_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/diy/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/line_conn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/zTreeStandard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/img/zTreeStandard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zTreeStyle/zTreeStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/admin_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/error.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/form_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/header_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_asc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_check.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_del.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_desc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_edit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_export.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_recover.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_refresh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_send.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_stop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/icon_yes.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/login_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/loginbox_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/open.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/org_shadow_btn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/prt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/right_b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/right_g.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/sel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/wrong.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/admin/wrong_b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/default_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/answer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ask.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/brand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/buying.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/buying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/card.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/category.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/circle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/comm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/comment.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/comments.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/consult.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/discuss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/dlsel_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/dlsort_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/dot_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/error.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/error_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/face.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/grab_expir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/grade_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/group_expir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/groupon_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/help_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/help_cont_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/help_title.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/inputbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/item_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/linebg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/new_product.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/nopic_100_100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/nopic_435_435.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/right_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/serv_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/service.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/shadow_b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/shadow_r.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/share.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/sprites.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/sprites_2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/sublist_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/submit_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/tel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/tips.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/tips_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/title_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/black_dot_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/btn_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/caption_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/dot_bg2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/favorites.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/h2_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/licurrent_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/list_table_thbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/orange_dot_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/sbtn_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/search_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/sel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/shopping.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/tr_show_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/tr_show_tdbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/uc_title_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/uc_titlebg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/uc_titleh2bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/ucenter/ucenter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/user_ico.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/welcome.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/wrap_box_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/front/xx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/goods/apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/goods/ss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.ztree.all.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/left.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tanglinkai/mall/controller/admin/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tanglinkai/mall/controller/admin/ManagerController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,43 +267,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "JUnit.GoodsMapperTest.testList.executor": "Debug",
-    "JUnit.ManagerMapperTest.testInsertManager.executor": "Run",
-    "JUnit.ManagerServiceTest.loginTest.executor": "Run",
-    "JUnit.ManagerServiceTest.saveTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.MallApplication.executor": "Debug",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/Code/higo-mall/src/main/java/com/tanglinkai/mall",
-    "last_opened_file_path": "D:/Code/higo-mall/src/main/webapp/WEB-INF",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.WebConfig.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.GoodsMapperTest.testList.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ManagerMapperTest.testInsertManager.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ManagerServiceTest.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ManagerServiceTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MallApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Code/higo-mall/src/main/java/com/tanglinkai/mall&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/higo-mall/src/main/webapp/WEB-INF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tanglinkai.mall.service.impl" />
       <recent name="com.tanglinkai.mall" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -130,7 +336,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GoodsMapperTest.testList">
+  <component name="RunManager" selected="Spring Boot.MallApplication">
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -140,6 +346,19 @@
       <option name="charset" value="UTF-8" />
       <option name="showConsole" value="true" />
       <method v="2" />
+    </configuration>
+    <configuration name="WebConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tanglinkai.mall.config.WebConfig" />
+      <module name="higo-mall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanglinkai.mall.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GoodsMapperTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="higo-mall" />
@@ -215,6 +434,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebConfig" />
         <item itemvalue="JUnit.GoodsMapperTest.testList" />
         <item itemvalue="JUnit.ManagerServiceTest.loginTest" />
         <item itemvalue="JUnit.ManagerServiceTest.saveTest" />
@@ -251,7 +471,11 @@
       <workItem from="1745218350991" duration="15162000" />
       <workItem from="1745240687474" duration="2472000" />
       <workItem from="1745244695804" duration="3352000" />
-      <workItem from="1745302881057" duration="13811000" />
+      <workItem from="1745302881057" duration="14162000" />
+      <workItem from="1745396250739" duration="385000" />
+      <workItem from="1745907858191" duration="5321000" />
+      <workItem from="1745913285002" duration="1239000" />
+      <workItem from="1745914541880" duration="6669000" />
     </task>
     <task id="LOCAL-00001" summary="嗨购商城初始化结构">
       <option name="closed" value="true" />
@@ -309,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745247933718</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="嗨购商城-实验课4">
+      <option name="closed" value="true" />
+      <created>1745330044021</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745330044021</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +554,7 @@
     <MESSAGE value="嗨购商城-实验课2-jsp初步界面" />
     <MESSAGE value="嗨购商城-实验课3" />
     <MESSAGE value="嗨购商城-实验课3-补充统一返回值结果" />
-    <option name="LAST_COMMIT_MESSAGE" value="嗨购商城-实验课3-补充统一返回值结果" />
+    <MESSAGE value="嗨购商城-实验课4" />
+    <option name="LAST_COMMIT_MESSAGE" value="嗨购商城-实验课4" />
   </component>
 </project>

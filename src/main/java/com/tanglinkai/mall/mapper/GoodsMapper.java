@@ -11,5 +11,6 @@ public interface GoodsMapper extends BaseMapper<Goods> {
      * 查询商品列表
      * @return
      */
+
     List<Goods> list();
 }
